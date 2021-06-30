@@ -1,0 +1,22 @@
+{
+  "name": "mediaserver",
+  "version": "1.0.0",
+  "description": "Webrtc one to many communication",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon server.js",
+    "build": "browserify -s MediasoupClient -o public/mediasoup-client.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.17.1",
+    "mediasoup": "^3.6.16",
+    "mediasoup-client": "^3.6.12",
+    "socket.io": "^2.3.0"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.4"
+  }
+}
